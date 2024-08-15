@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" /> <!-- Định nghĩa bộ ký tự sử dụng UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Đảm bảo trình duyệt sử dụng chế độ tương thích mới nhất -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Đảm bảo trang web hiển thị đúng trên các thiết bị di động -->
+    <title>NextDrive Group</title> <!-- Tiêu đề của trang web -->
+    <link rel="stylesheet" href="style.css" /> <!-- Liên kết đến tệp CSS cho kiểu dáng của trang -->
+    <style>
+        /* Ngăn chặn việc chọn và sao chép văn bản */
+        body {
+            user-select: none; /* Các trình duyệt hiện đại */
+            -webkit-user-select: none; /* Chrome, Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper"> <!-- Bao bọc toàn bộ nội dung của form -->
+        <div class="login-wrapper"> <!-- Khối chứa form đăng nhập -->
+            <div class="login-header">NextDrive </div> <!-- Tiêu đề của form đăng nhập -->
+            <div class="login-form"> <!-- Khối chứa các trường nhập liệu và các phần tử của form -->
+                <div class="input-wrapper"> <!-- Khối bao bọc cho trường nhập liệu username -->
+                    <input type="text" id="user" class="input-field" required /> <!-- Trường nhập liệu cho username -->
+                    <label for="user" class="label">Username</label> <!-- Nhãn cho trường nhập liệu username -->
+                    <i class="bx-user icon"></i> <!-- Biểu tượng (icon) cho trường nhập liệu username -->
+                </div>
+                <div class="input-wrapper"> <!-- Khối bao bọc cho trường nhập liệu password -->
+                    <input type="password" id="pw" class="input-field" required /> <!-- Trường nhập liệu cho password -->
+                    <label for="pw" class="label">Password</label> <!-- Nhãn cho trường nhập liệu password -->
+                    <i class="bx bx-lock-alt icon"></i> <!-- Biểu tượng (icon) cho trường nhập liệu password -->
+                </div>
+                <div class="login-check"> <!-- Khối chứa checkbox và liên kết quên mật khẩu -->
+                    <div class="remember"> <!-- Khối chứa checkbox nhớ đăng nhập -->
+                        <input type="checkbox" id="remember-me" /> <!-- Checkbox cho tùy chọn "Remember me" -->
+                        <label for="remember-me">Remember me for next login</label> <!-- Nhãn cho checkbox "Remember me" -->
+                    </div>
+                    <div class="forgot"> <!-- Khối chứa liên kết quên mật khẩu -->
+                        <a href="#">Forgot Password?</a> <!-- Liên kết đến trang khôi phục mật khẩu -->
+                    </div>
+                </div>
+                <div class="input-wrapper"> <!-- Khối bao bọc cho nút đăng nhập -->
+                    <input type="submit" class="input-login" value="Login" /> <!-- Nút đăng nhập -->
+                </div>
+                <div class="register"> <!-- Khối chứa liên kết đăng ký tài khoản mới -->
+                    <span>You do not have an account? <a href="#">Create account</a></span> <!-- Liên kết đến trang đăng ký tài khoản mới -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
